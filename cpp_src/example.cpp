@@ -6,7 +6,7 @@ extern "C" void init(void* preallocated_memory, int x, int y)
   new(preallocated_memory) Rectangle(x, y);
 }
 
-extern "C" int volume(Rectangle* rectangle, int height)
+extern "C" int volume(Rectangle* rectangle, int depth)
 {
-  return rectangle->area() * height;
+  return rectangle->area() * depth;
 }
